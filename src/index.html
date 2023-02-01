@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="js-content content">
+    <div class="logo">
+      <img class="logo__img" src="resources/images/logo-icon.svg" alt="Company Logo">
+      <p class="logo__name">Coding.Live Sessions</p>
+    </div>
+
+    <div class="reg-form">
+      <div class="reg-form__progress-bar progress-bar">
+        <span class="progress-bar__active"><!-- active indicator --></span>
+        <span class="progress-bar__line"><!-- progress bar line --></span>
+        <span class="progress-bar__default"><!-- default indicator --></span>
+        <span class="progress-bar__line"><!-- progress bar line --></span>
+        <span class="progress-bar__default"><!-- default indicator --></span>
+      </div>
+
+      <h1 class="reg-form__title">Registration</h1>
+      <p class="reg-form__text">
+        Fill in&nbsp;the registration data. It&nbsp;will take a&nbsp;couple of&nbsp;minutes. <br>
+        All you need is&nbsp;a&nbsp;phone number and e-mail
+      </p>
+
+      <div class="js-notif reg-form__notification notification">
+        <img class="notification__padlock-img" src="resources/images/padlock-icon.svg" alt="Padlock">
+        <p class="notification__text">
+          We&nbsp;take privacy issues seriously. You can be&nbsp;sure 
+          that your personal data is&nbsp;securely protected.
+        </p>
+        <img class="js-close-notif notification__cross-img" src="resources/images/cross_notification-icon.svg" alt="Close Notification">
+      </div>
+
+      <div class="reg-form__phone-number phone-number">
+        <p class="phone-number__text">Enter your phone number</p>
+        <div class="phone-number__input">
+          <div class="phone-number__select-region select-region">
+            <p class="select-region__select">+1</p>
+            <img class="select-region__dropdown-img" src="resources/images/select-icon.svg" alt="Select Region">
+          </div>
+          <p class="phone-number__enter-number">555 555-1234</p>
+        </div>
+      </div>
+
+      <div class="reg-form__btn btn">
+        <p class="btn-text">Send Code</p>
+      </div>
+    </div>
+
+    <img class="js-exit-window exit-window-img" src="resources/images/cross-icon.svg" alt="Exit">
+  </div>
+  <!-- <h2 class="js-output-after-exit output-after-exit"></h2> -->
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
